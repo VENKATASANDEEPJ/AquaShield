@@ -1,0 +1,16 @@
+{
+  "source": "Open-Meteo Historical Weather API",
+  "dataset": "ERA5 reanalysis daily precipitation_sum",
+  "source_url": "https://archive-api.open-meteo.com/v1/archive",
+  "retrieved_at_utc": "2026-10-18T17:39:45.836118+00:00",
+  "latitude": 13.0827,
+  "longitude": 80.2707,
+  "timezone": "Asia/Kolkata",
+  "start_date": "2020-01-01",
+  "end_date": "2025-12-31",
+  "rows": 2192,
+  "missing_precipitation": 0,
+  "data_type": "Reanalysis estimate; not a direct rain-gauge reading",
+  "license_and_terms": "CC BY 4.0 attribution; free API for non-commercial use subject to rate limits and availability terms",
+  "csv_sha256": "450a856a56674c8750d8b84ef58baa6983df00569c02ba5a9f1064ba4761c251"
+}
