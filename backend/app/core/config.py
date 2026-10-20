@@ -23,7 +23,11 @@ _load_dotenv()
 class Settings:
     # Environment configuration avoids requiring a second settings framework.
     database_url: str = os.getenv("DATABASE_URL", "sqlite:///./aquashield.db")
-    cors_origins: str = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174")
+    cors_origins: str = os.getenv(
+        "CORS_ORIGINS",
+        "https://aqua-shield-orcin.vercel.app,https://aqua-shield.vercel.app,"
+        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174",
+    )
     max_upload_mb: int = int(os.getenv("MAX_UPLOAD_MB", "20"))
     max_upload_rows: int = int(os.getenv("MAX_UPLOAD_ROWS", "200000"))
 
@@ -33,4 +37,3 @@ class Settings:
 
 
 settings = Settings()
-

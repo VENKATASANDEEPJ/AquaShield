@@ -9,7 +9,6 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: CORS_ORIGINS
-        sync: false
+        value: https://aqua-shield-orcin.vercel.app,https://aqua-shield.vercel.app,http://localhost:5173
       - key: MAX_UPLOAD_MB
         value: "20"
-
