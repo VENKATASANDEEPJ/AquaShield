@@ -23,6 +23,9 @@ The Custom Data Lab infers column types and geographic/date candidates, reports 
 
 The bundled dataset has 2,192 daily rows for 2020-01-01 through 2025-12-31 and no missing precipitation values at retrieval. See [data dictionary](docs/data_dictionary.md), [dataset source notes](docs/dataset_sources.md), and [evaluation report](docs/evaluation_report.md). No supervised model is included: no verified event labels align to this rainfall series, so no accuracy or forecast claim is reported.
 
+<img width="1910" height="907" alt="image" src="https://github.com/user-attachments/assets/24b03137-3dcd-4a99-908e-98f373dd85cb" />
+
+
 ## Persistence and privacy
 
 SQLAlchemy stores completed analysis run summaries in SQLite by default. Set `DATABASE_URL` to PostgreSQL for deployment; a psycopg driver is included. Upload contents are processed in memory and never persisted by the backend; the selected browser file remains in browser memory during that tab's workflow. Experiment metadata includes a sanitized filename, row/column counts, and cleaning summary. Authentication and multi-user data isolation are not implemented.
